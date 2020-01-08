@@ -1,26 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { physical_traits, classes, races } from './Lists';
 
-function App() {
-  return (
+class App extends React.Component {
+   state = {text: ""};
+
+   doSomething = () => {
+    this.setState({
+      text: "HAHAHA"
+    });
+   }
+
+  render() {
+   return <>
+    <h1>charagen</h1>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={this.doSomething}>
+        Create Character
+      </button>
+         <p>
+            {this.state.text}
+            </p>
     </div>
-  );
+       </>;
+  }
+
+
 }
 
 export default App;
