@@ -14,7 +14,7 @@ git checkout master
 
 echo
 echo "Replacing master with new build..."
-ls | grep -v build | xargs rm -r
+ls | grep -v build | grep -v node_modules | xargs rm -r
 mv build/* ./
 rmdir build
 
