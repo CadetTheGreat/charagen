@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/charagen/static/css/main.d1b05096.chunk.css",
-    "main.js": "/charagen/static/js/main.37df9b90.chunk.js",
-    "main.js.map": "/charagen/static/js/main.37df9b90.chunk.js.map",
+    "main.js": "/charagen/static/js/main.d5c29b87.chunk.js",
+    "main.js.map": "/charagen/static/js/main.d5c29b87.chunk.js.map",
     "runtime-main.js": "/charagen/static/js/runtime-main.81d36029.js",
     "runtime-main.js.map": "/charagen/static/js/runtime-main.81d36029.js.map",
-    "static/js/2.bc119e53.chunk.js": "/charagen/static/js/2.bc119e53.chunk.js",
-    "static/js/2.bc119e53.chunk.js.map": "/charagen/static/js/2.bc119e53.chunk.js.map",
+    "static/js/2.bb57741b.chunk.js": "/charagen/static/js/2.bb57741b.chunk.js",
+    "static/js/2.bb57741b.chunk.js.map": "/charagen/static/js/2.bb57741b.chunk.js.map",
     "index.html": "/charagen/index.html",
-    "precache-manifest.17552f3c2135ba5be6c33b1faad37e6b.js": "/charagen/precache-manifest.17552f3c2135ba5be6c33b1faad37e6b.js",
+    "precache-manifest.37a00641a7b1b21b380a243a3475cf67.js": "/charagen/precache-manifest.37a00641a7b1b21b380a243a3475cf67.js",
     "service-worker.js": "/charagen/service-worker.js",
     "static/css/main.d1b05096.chunk.css.map": "/charagen/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.bc119e53.chunk.js.LICENSE": "/charagen/static/js/2.bc119e53.chunk.js.LICENSE"
+    "static/js/2.bb57741b.chunk.js.LICENSE": "/charagen/static/js/2.bb57741b.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.81d36029.js",
-    "static/js/2.bc119e53.chunk.js",
+    "static/js/2.bb57741b.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.37df9b90.chunk.js"
+    "static/js/main.d5c29b87.chunk.js"
   ]
 }
