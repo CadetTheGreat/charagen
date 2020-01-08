@@ -5,7 +5,7 @@ git checkout dev
 
 echo
 echo "Building..."
-jekyll b
+npm build
 
 echo
 echo "Switching to master..."
@@ -14,9 +14,9 @@ git checkout master
 
 echo
 echo "Replacing master with new build..."
-ls | grep -v _site | xargs rm -r
-mv _site/* ./
-rmdir _site
+ls | grep -v build | xargs rm -r
+mv build/* ./
+rmdir build
 
 echo "Committing the change..."
 git add .
