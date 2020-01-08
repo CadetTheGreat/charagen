@@ -1,35 +1,32 @@
 import React from 'react';
 import './App.css';
-import { physical_traits, classes, races } from './Lists';
+import lists from './lists.json';
 
 class App extends React.Component {
    state = {
-      race: "",
-      rank: "",
-      trait: ""
+      vals: []
    };
 
    doSomething = () => {
-      let race = races[Math.floor(races.length * Math.random())]
-      let rank = classes[Math.floor(classes.length * Math.random())]
-      let trait = physical_traits[Math.floor(physical_traits.length * Math.random())]
-    this.setState({
-       race,
-       rank,
-       trait
-    });
+      let vals = []
+      for (let k in lists) {
+         vals.push({name: k, val: lists[k][Math.floor(lists[k].length * Math.random())]})
+      }
+
+      this.setState({
+         vals
+      });
    }
 
   render() {
+     let rows = this.state.vals.map((x) => <p> <b> {x.name}: </b> {x.val} </p>)
    return <>
     <h1>charagen</h1>
     <div className="App">
       <button onClick={this.doSomething}>
         Create Character
       </button>
-         <p> <b> Race: </b> {this.state.race} </p>
-         <p> <b> Class: </b> {this.state.rank} </p>
-         <p> <b> Trait: </b> {this.state.trait} </p>
+         {rows}
     </div>
        </>;
   }
