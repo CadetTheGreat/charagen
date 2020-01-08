@@ -5,7 +5,7 @@ git checkout dev
 
 echo
 echo "Building..."
-npm build
+npm run build
 
 echo
 echo "Switching to master..."
