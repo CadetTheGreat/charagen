@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/charagen/static/css/main.d1b05096.chunk.css",
+    "main.js": "/charagen/static/js/main.c5360e71.chunk.js",
+    "main.js.map": "/charagen/static/js/main.c5360e71.chunk.js.map",
+    "runtime-main.js": "/charagen/static/js/runtime-main.81d36029.js",
+    "runtime-main.js.map": "/charagen/static/js/runtime-main.81d36029.js.map",
+    "static/js/2.bc119e53.chunk.js": "/charagen/static/js/2.bc119e53.chunk.js",
+    "static/js/2.bc119e53.chunk.js.map": "/charagen/static/js/2.bc119e53.chunk.js.map",
+    "index.html": "/charagen/index.html",
+    "precache-manifest.ee8cb13205252b6b41604fda551c3ec7.js": "/charagen/precache-manifest.ee8cb13205252b6b41604fda551c3ec7.js",
+    "service-worker.js": "/charagen/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/charagen/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.bc119e53.chunk.js.LICENSE": "/charagen/static/js/2.bc119e53.chunk.js.LICENSE",
+    "static/media/logo.svg": "/charagen/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81d36029.js",
+    "static/js/2.bc119e53.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.c5360e71.chunk.js"
+  ]
+}
