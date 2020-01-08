@@ -1,14 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { physical_traits, classes, races } from './Lists';
 
 class App extends React.Component {
-   state = {text: ""};
+   state = {
+      race: "",
+      rank: "",
+      trait: ""
+   };
 
    doSomething = () => {
+      let race = races[Math.floor(races.length * Math.random())]
+      let rank = classes[Math.floor(classes.length * Math.random())]
+      let trait = physical_traits[Math.floor(physical_traits.length * Math.random())]
     this.setState({
-      text: "HAHAHA"
+       race,
+       rank,
+       trait
     });
    }
 
@@ -19,9 +27,9 @@ class App extends React.Component {
       <button onClick={this.doSomething}>
         Create Character
       </button>
-         <p>
-            {this.state.text}
-            </p>
+         <p> <b> Race: </b> {this.state.race} </p>
+         <p> <b> Class: </b> {this.state.rank} </p>
+         <p> <b> Trait: </b> {this.state.trait} </p>
     </div>
        </>;
   }
