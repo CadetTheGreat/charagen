@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/charagen/static/css/main.d1b05096.chunk.css",
-    "main.js": "/charagen/static/js/main.d5c29b87.chunk.js",
-    "main.js.map": "/charagen/static/js/main.d5c29b87.chunk.js.map",
+    "main.css": "/charagen/static/css/main.8e2c08bb.chunk.css",
+    "main.js": "/charagen/static/js/main.53381d3a.chunk.js",
+    "main.js.map": "/charagen/static/js/main.53381d3a.chunk.js.map",
     "runtime-main.js": "/charagen/static/js/runtime-main.81d36029.js",
     "runtime-main.js.map": "/charagen/static/js/runtime-main.81d36029.js.map",
     "static/js/2.bb57741b.chunk.js": "/charagen/static/js/2.bb57741b.chunk.js",
     "static/js/2.bb57741b.chunk.js.map": "/charagen/static/js/2.bb57741b.chunk.js.map",
     "index.html": "/charagen/index.html",
-    "precache-manifest.37a00641a7b1b21b380a243a3475cf67.js": "/charagen/precache-manifest.37a00641a7b1b21b380a243a3475cf67.js",
+    "precache-manifest.da625ef93f4d1a944324439f2851b1e7.js": "/charagen/precache-manifest.da625ef93f4d1a944324439f2851b1e7.js",
     "service-worker.js": "/charagen/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/charagen/static/css/main.d1b05096.chunk.css.map",
+    "static/css/main.8e2c08bb.chunk.css.map": "/charagen/static/css/main.8e2c08bb.chunk.css.map",
     "static/js/2.bb57741b.chunk.js.LICENSE": "/charagen/static/js/2.bb57741b.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.81d36029.js",
     "static/js/2.bb57741b.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.d5c29b87.chunk.js"
+    "static/css/main.8e2c08bb.chunk.css",
+    "static/js/main.53381d3a.chunk.js"
   ]
 }
