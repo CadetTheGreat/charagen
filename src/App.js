@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import lists from './lists.json';
 
+var version = "1.1"
+
 class App extends React.Component {
    state = {
       vals: []
@@ -10,7 +12,13 @@ class App extends React.Component {
    doSomething = () => {
       let vals = []
       for (let k in lists) {
-         vals.push({name: k, val: lists[k][Math.floor(lists[k].length * Math.random())]})
+         let keys = Object.keys(lists[k])
+         let num = Math.floor(keys.length * Math.random())
+         vals.push({
+            name: k,
+            val: keys[num],
+            img: lists[k][keys[num]]
+         })
       }
 
       this.setState({
@@ -19,13 +27,31 @@ class App extends React.Component {
    }
 
   render() {
-     let rows = this.state.vals.map((x) => <p> <b> {x.name}: </b> {x.val} </p>)
+     let rows = this.state.vals.map((x) =>
+        <div className="char-row">
+           <div className="char-desc">
+              <h2 className="char-key"><b>{x.name}:</b></h2>
+              <span> {x.val} </span>
+           </div>
+              {
+               x.img != null ?
+              <img src={process.env.PUBLIC_URL + x.img} alt="logo" />
+                 : <></>
+              }
+        </div>
+           )
    return <>
-    <h1>charagen</h1>
+     <header>
+       <h1>Charagen</h1>
+       <p>{version}</p>
+     </header>
     <div className="App">
-      <button onClick={this.doSomething}>
-        Create Character
-      </button>
+      <div className="char-button-row">
+         <button onClick={this.doSomething}>
+           Create Character
+         </button>
+         <hr />
+      </div>
          {rows}
     </div>
        </>;
