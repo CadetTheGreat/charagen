@@ -24,4 +24,4 @@ git commit -m "New build on $(date)"
 git checkout dev
 
 echo
-echo "Done! You can commit now."
+echo "Done! You can keep programming now!"
