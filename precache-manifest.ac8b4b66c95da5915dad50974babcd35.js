@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3f5949ba09cfdb2a7262f135a7b0117",
+    "revision": "d5af4026d34eca55ba6a255a3e27cf6f",
     "url": "/charagen/index.html"
   },
   {
-    "revision": "b8f82320c1eab5b4fcdf",
+    "revision": "48c901b38878389233ab",
     "url": "/charagen/static/css/main.8e2c08bb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/charagen/static/js/2.bb57741b.chunk.js.LICENSE"
   },
   {
-    "revision": "b8f82320c1eab5b4fcdf",
-    "url": "/charagen/static/js/main.53381d3a.chunk.js"
+    "revision": "48c901b38878389233ab",
+    "url": "/charagen/static/js/main.f8e7df9f.chunk.js"
   },
   {
     "revision": "1cdc75e012f5c2eee343",
