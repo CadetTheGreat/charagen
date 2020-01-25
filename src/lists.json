@@ -248,6 +248,13 @@
       "Constantly Smiling": null,
       "Wears too much jewelry": null,
       "Left-handed or ambidextrous": null
+      "Has several hidden body piercings/tattoos/markings that regular clothing conceal"
+      "Wears some kind of mask": null
+      "Very modest or insecure and covers everything but head whenever possible": null
+      "Has a notable birthmark": null
+      "Has a notable burn scar": null
+      "Has a notable tattoo/marking": null
+      "Has a piercing": null
    },
    
    "Personality Trait": {
@@ -285,7 +292,9 @@
       "Notoriously two-faced and will betray anyone": null,
       "Charismatic and can convince anyone to do their bidding": null,
       "Very proper and always polite to others": null,
-      "Obsessive personality - Easily gets attached to something and talks about it constantly": null
+      "Obsessive personality - Easily gets attached to something and talks about it constantly": null,
+      "If they yell more than a few words, their voice becomes hoarse. They avoid yelling. People might assume they’re calm and collected.": null,
+      "Believe in love at first sight. Becomes instantly enamored with the first attractive person they see in a town": null
    },
    
    "Strength": {
@@ -307,7 +316,9 @@
       "Super Lucky": null,
       "Can recite any line from any book they’ve read": null,
       "Brave/Fearless": null,
-      "Able to talk their way out of any trouble/invent stories on the fly": null
+      "Able to talk their way out of any trouble/invent stories on the fly": null,
+      "Special connection to children": null
+
    },
    
    "Flaw": {
@@ -345,7 +356,14 @@
       "Narcoleptic (Falls asleep at random times)": null,
       "Paranoid about anything and everything": null,
       "Fear of heights": null,
-      "Can’t swim": null
+      "Can’t swim": null,
+      "Can only see out of one eye or hear out of one ear": null,
+      "Hates getting wet/rarely bathes": null,
+      "They have an overly guilty conscience and will try to make up for crimes that strangers have committed.": null,
+      "Doesn’t have a censor and tells everyone exactly what they think": null,
+      "Panics when suddenly put into the spotlight": null,
+      "Illiterate and will stop at nothing to make sure no one knows this fact": null,
+      "Spaces out mid conversation and will pay more attention to what’s going on around them, (a bird in the distance, etc.) unless other people are engaging them, monologues bore them.": null
    },
    
    "Other": {
@@ -390,6 +408,40 @@
       "Always knows what phase the moon is in": null,
       "Always knows what the temperature is outside": null,
       "Names/Becomes attached to inanimate objects": null,
-      "Able to see glimpses into the future": null
+      "Able to see glimpses into the future": null,
+      "Always talks about his/her lost love": null,
+      "Often mixes up/makes up sayings (ex. Never count your eggs until the fat lady sings!)": null,
+      "Talks very softly especially when involved in arguments": null,
+      "Walks as if he/she is in constant danger of being attacked": null,
+      "Doesn’t talk much and uses short simple words when he/she does speak": null,
+      "They have a mother/father/sister/brother complex, and always love/hate anyone resembling them.": null"": null,
+      "Has a weakness for rescuing stray animals": null,
+      "Randomly interrupts others with related/unrelated “interesting” facts": null,
+      "They zone out whenever someone takes longer than five seconds to explain something, but pretend to have understood it perfectly": null,
+      "They spend all their free time honing their skills at something extremely obscure and probably useless": null,
+      "They introduce themselves with a slightly different name every time.": null,
+      "Their left/right hand wanders without their knowledge.": null,
+      "They often speak in hypotheticals": null,
+      "Regularly looks up at the sky to check what position the sun/moon is in and comments on it": null,
+      "They have to stop whatever they’re doing and look someone directly in the eyes before talking to them.": null,
+      "Readily puts them self in harms way without careful consideration": null,
+      "Hands and feet are always freezing (this may be caused by bad circulation, a curse in the family, or something else entirely)": null,
+      "They name all their actions as they do execute them": null,
+      "They are embarrassed by the sound of their laugh, and will use all their willpower to not let a single giggle escape.": null,
+      "They are needlessly maternal, and will not rest until all their friends (and some strangers) are well fed and cared for.": null,
+      "They need to look cool at all times. They obsessively plan out dramatic entrances, witty one-lines, and elaborate combat moves.": null,
+      "Each night, they have a vivid prophetic dream of their own messy death the next day.": null,
+      "Is terrible at remembering faces/sketches the face of everyone they meet": null,
+      "Whenever they see a hairy mammal that isn’t trying to kill them, they are obligated to try to pet it, even if it’s an NPC/PC": null,
+      "Any race smaller than them are treated as “cute,” (Yes goblins too)": null,
+      "Extremely cautious of proper posture. Constantly standing or sitting up straight": null,
+      "They have a huge smile that never reaches their eyes": null,
+      "Constantly humming a tune, not always the same one. Its very soft and most of the time, they don’t even know they’re doing it": null,
+      "They don’t feel comfortable if they’re not chewing on something. (Stem of grass, Piece of straw, Toothpick, etc.)": null,
+      "Gives nicknames to everyone and everything. How flattering they are depends on what they think of that person or object": null,
+      "They frequently try to rhyme their sentences...": null,
+      "Shows off their prowess with other languages besides common to the point of annoyance to others": null,
+      "Never looks anyone directly in the eyes": null,
+      "Knows “fun facts” about everything. They are usually wrong.": null
    }
 }
