@@ -1,6 +1,6 @@
 {
   "name": "charagen",
-  "homepage" : "https://cadetthegreat.github.io/charagen/",
+  "homepage": "https://cadetthegreat.github.io/charagen/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
