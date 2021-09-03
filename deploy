@@ -6,7 +6,7 @@ npm run build
 echo
 echo "Replacing master with new build..."
 rm -r docs/
-cp build docs
+cp -r build docs
 
 echo "Committing the change..."
 git add docs/
