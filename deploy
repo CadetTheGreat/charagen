@@ -1,27 +1,16 @@
 #!/bin/bash
-echo "Switching to dev..."
-git stash
-git checkout dev
-
 echo
 echo "Building..."
 npm run build
 
 echo
-echo "Switching to master..."
-git stash
-git checkout master
-
-echo
 echo "Replacing master with new build..."
-ls | grep -v build | grep -v node_modules | xargs rm -r
-mv build/* ./
-rmdir build
+rm -r docs/
+cp build docs
 
 echo "Committing the change..."
-git add .
+git add docs/
 git commit -m "New build on $(date)"
-git checkout dev
 
 echo
 echo "Done! You can keep programming now!"
