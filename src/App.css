@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -39,19 +28,25 @@
 
 .char-row {
    display: flex;
-   justify-content: space-between;
    flex-direction: row;
    align-items: flex-start;
    padding-top: 5px;
    padding-bottom: 5px;
 }
 
+.char-button {
+   white-space: nowrap;
+}
+
 .char-desc {
+   width: 100%;
    display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   flex-direction: row;
+   align-items: baseline;
+}
+
+.char-desc > * {
+    margin: 0 10px;
 }
 
 img {
