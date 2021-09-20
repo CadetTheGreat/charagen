@@ -9,7 +9,7 @@
       "Male", "Female"
     ],
     "scifi": [
-      "Cyborg"
+      "Male", "Female", "Cyborg"
     ]
   },
   "Physical Trait": {

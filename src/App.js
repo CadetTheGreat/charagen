@@ -4,21 +4,43 @@ import traits from './traits.json';
 
 var version = "1.2"
 
+function flrrnd(num) {
+   return Math.floor(num * Math.random())
+}
+
+var calctraitval = (oldtraitval, traits_by_type, ...types) => {
+   // Only use types that exist and have at least 2 items, to avoid rerolling giving the same value as before.
+   let available_types = types.filter(traittype => Array.isArray(traits_by_type[traittype]))
+   let possibleVals = new Set()
+
+   for (let x of available_types) {
+      for (let y of traits_by_type[x]) {
+         possibleVals.add(y)
+      }
+   }
+
+   let possibleValsArray = Array.from(possibleVals)
+   if (possibleVals.has(oldtraitval)) {
+      let oldidx = possibleValsArray.findIndex(x => x === oldtraitval)
+      let rndidx = flrrnd(possibleVals.size-1)
+      return possibleValsArray[rndidx >= oldidx ? rndidx + 1 : rndidx]
+   } else {
+      return possibleValsArray[flrrnd(possibleVals.size)]
+   }
+}
+
 class App extends React.Component {
    state = {
       vals: []
    };
 
-   rerollVal = (trait, index) => {
+   rerollVal = (index) => {
       let vals = [...this.state.vals]
-      let trait_idx = Math.floor((traits[trait].fantasy.length-1) * Math.random())
-      let oldnum = vals[index].trait_idx
-      trait_idx = trait_idx >= oldnum ? trait_idx+1 : trait_idx
+      let oldval = vals[index]
 
       vals[index] = {
-         trait_type: "fantasy",
-         trait: trait,
-         trait_idx: trait_idx
+         trait: oldval.trait,
+         trait_val: calctraitval(oldval.trait_val, traits[oldval.trait], "fantasy", "scifi")
       }
 
       this.setState({
@@ -29,11 +51,9 @@ class App extends React.Component {
    generateCharacter = () => {
       let vals = []
       for (let trait in traits) {
-         let trait_idx = Math.floor(traits[trait].fantasy.length * Math.random())
          vals.push({
             trait: trait,
-            trait_type: "fantasy",
-            trait_idx: trait_idx
+            trait_val: calctraitval("", traits[trait], "fantasy")
          })
       }
 
@@ -50,9 +70,9 @@ class App extends React.Component {
      let rows = this.state.vals.map((key, index) =>
         <div key={key.trait} className="char-row">
            <div className="char-desc">
-              <button className="char-button" onClick={() => this.rerollVal(key.trait, index)}>Re-roll</button>
+              <button className="char-button" onClick={() => this.rerollVal(index)}>Re-roll</button>
               <h2 className="char-key"><b>{key.trait}:</b></h2>
-              <span> {traits[key.trait][key.trait_type][key.trait_idx]} </span>
+              <span> {key.trait_val} </span>
            </div>
         </div>
            )
@@ -73,8 +93,6 @@ class App extends React.Component {
     </div>
        </>;
   }
-
-
 }
 
 export default App;
