@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/charagen/static/css/main.fd7c4665.chunk.css",
-    "main.js": "/charagen/static/js/main.e25ef391.chunk.js",
-    "main.js.map": "/charagen/static/js/main.e25ef391.chunk.js.map",
+    "main.js": "/charagen/static/js/main.a62e8c6c.chunk.js",
+    "main.js.map": "/charagen/static/js/main.a62e8c6c.chunk.js.map",
     "runtime-main.js": "/charagen/static/js/runtime-main.f10dec11.js",
     "runtime-main.js.map": "/charagen/static/js/runtime-main.f10dec11.js.map",
-    "static/js/2.8b63bf81.chunk.js": "/charagen/static/js/2.8b63bf81.chunk.js",
-    "static/js/2.8b63bf81.chunk.js.map": "/charagen/static/js/2.8b63bf81.chunk.js.map",
+    "static/js/2.e94848ec.chunk.js": "/charagen/static/js/2.e94848ec.chunk.js",
+    "static/js/2.e94848ec.chunk.js.map": "/charagen/static/js/2.e94848ec.chunk.js.map",
     "index.html": "/charagen/index.html",
     "static/css/main.fd7c4665.chunk.css.map": "/charagen/static/css/main.fd7c4665.chunk.css.map",
-    "static/js/2.8b63bf81.chunk.js.LICENSE.txt": "/charagen/static/js/2.8b63bf81.chunk.js.LICENSE.txt"
+    "static/js/2.e94848ec.chunk.js.LICENSE.txt": "/charagen/static/js/2.e94848ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f10dec11.js",
-    "static/js/2.8b63bf81.chunk.js",
+    "static/js/2.e94848ec.chunk.js",
     "static/css/main.fd7c4665.chunk.css",
-    "static/js/main.e25ef391.chunk.js"
+    "static/js/main.a62e8c6c.chunk.js"
   ]
 }
