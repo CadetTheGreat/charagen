@@ -38,6 +38,10 @@
    white-space: nowrap;
 }
 
+.char-key {
+   white-space: nowrap;
+}
+
 .char-desc {
    width: 100%;
    display: flex;

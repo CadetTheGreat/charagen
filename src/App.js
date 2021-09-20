@@ -9,6 +9,24 @@ class App extends React.Component {
       vals: []
    };
 
+   rerollVal = (key,index) => {
+       let vals = [...this.state.vals]
+       let local_lists = lists[key]
+       let keys = Object.keys(local_lists)
+       let num = Math.floor(keys.length * Math.random())
+
+       vals[index] = {
+           name: key,
+           val: keys[num]
+       }
+
+       console.log(vals)
+
+       this.setState({
+           vals
+       });
+   }
+
    generateCharacter = () => {
       let vals = []
       for (let k in lists) {
@@ -30,16 +48,16 @@ class App extends React.Component {
    }
 
   render() {
-     let rows = this.state.vals.map((x) =>
-        <div className="char-row">
+     let rows = this.state.vals.map((key, index) =>
+        <div key={key.name} className="char-row">
            <div className="char-desc">
-              <button className="char-button" onClick={this.generateCharacter}>Submit Addition</button>
-              <button className="char-button" onClick={this.generateCharacter}>Re-roll</button>
-              <h2 className="char-key"><b>{x.name}:</b></h2>
-              <span> {x.val} </span>
+              <button className="char-button" onClick={() => this.rerollVal(key.name, index)}>Re-roll</button>
+              <h2 className="char-key"><b>{key.name}:</b></h2>
+              <span> {key.val} </span>
            </div>
         </div>
            )
+
    return <>
      <header>
        <h1>Charagen</h1>
