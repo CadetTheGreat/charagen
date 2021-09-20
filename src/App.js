@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import traits from './traits.json';
 
-var version = "1.1"
+var version = "1.2"
 
 class App extends React.Component {
    state = {
@@ -11,14 +11,14 @@ class App extends React.Component {
 
    rerollVal = (trait, index) => {
       let vals = [...this.state.vals]
-      let num = Math.floor((traits[trait].length-1) * Math.random())
-      let oldnum = vals[index].num
-      num = num >= oldnum ? num+1 : num
+      let trait_idx = Math.floor((traits[trait].fantasy.length-1) * Math.random())
+      let oldnum = vals[index].trait_idx
+      trait_idx = trait_idx >= oldnum ? trait_idx+1 : trait_idx
 
       vals[index] = {
-         name: trait,
-         num: num,
-         val: traits[trait][num]
+         trait_type: "fantasy",
+         trait: trait,
+         trait_idx: trait_idx
       }
 
       this.setState({
@@ -29,11 +29,11 @@ class App extends React.Component {
    generateCharacter = () => {
       let vals = []
       for (let trait in traits) {
-         let num = Math.floor(traits[trait].length * Math.random())
+         let trait_idx = Math.floor(traits[trait].fantasy.length * Math.random())
          vals.push({
-            name: trait,
-            num: num,
-            val: traits[trait][num]
+            trait: trait,
+            trait_type: "fantasy",
+            trait_idx: trait_idx
          })
       }
 
@@ -48,11 +48,11 @@ class App extends React.Component {
 
   render() {
      let rows = this.state.vals.map((key, index) =>
-        <div key={key.name} className="char-row">
+        <div key={key.trait} className="char-row">
            <div className="char-desc">
-              <button className="char-button" onClick={() => this.rerollVal(key.name, index)}>Re-roll</button>
-              <h2 className="char-key"><b>{key.name}:</b></h2>
-              <span> {key.val} </span>
+              <button className="char-button" onClick={() => this.rerollVal(key.trait, index)}>Re-roll</button>
+              <h2 className="char-key"><b>{key.trait}:</b></h2>
+              <span> {traits[key.trait][key.trait_type][key.trait_idx]} </span>
            </div>
         </div>
            )
