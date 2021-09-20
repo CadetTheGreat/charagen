@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import lists from './lists.json';
+import traits from './lists.json';
 
 var version = "1.1"
 
@@ -9,32 +9,31 @@ class App extends React.Component {
       vals: []
    };
 
-   rerollVal = (key,index) => {
-       let vals = [...this.state.vals]
-       let local_lists = lists[key]
-       let keys = Object.keys(local_lists)
-       let num = Math.floor(keys.length * Math.random())
+   rerollVal = (trait, index) => {
+      let vals = [...this.state.vals]
+      let num = Math.floor((traits[trait].length-1) * Math.random())
+      let oldnum = vals[index].num
+      num = num >= oldnum ? num+1 : num
 
-       vals[index] = {
-           name: key,
-           val: keys[num]
-       }
+      vals[index] = {
+         name: trait,
+         num: num,
+         val: traits[trait][num]
+      }
 
-       console.log(vals)
-
-       this.setState({
-           vals
-       });
+      this.setState({
+         vals
+      });
    }
 
    generateCharacter = () => {
       let vals = []
-      for (let k in lists) {
-         let keys = Object.keys(lists[k])
-         let num = Math.floor(keys.length * Math.random())
+      for (let trait in traits) {
+         let num = Math.floor(traits[trait].length * Math.random())
          vals.push({
-            name: k,
-            val: keys[num]
+            name: trait,
+            num: num,
+            val: traits[trait][num]
          })
       }
 
@@ -66,7 +65,7 @@ class App extends React.Component {
     <div className="App">
       <div className="char-button-row">
          <button onClick={this.generateCharacter}>
-           Create Character
+           Generate
          </button>
          <hr />
       </div>
