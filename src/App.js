@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import traits from './lists.json';
+import traits from './traits.json';
 
 var version = "1.1"
 
