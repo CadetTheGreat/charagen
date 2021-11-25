@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/charagen/static/css/main.fd7c4665.chunk.css",
-    "main.js": "/charagen/static/js/main.2bd3a400.chunk.js",
-    "main.js.map": "/charagen/static/js/main.2bd3a400.chunk.js.map",
+    "main.js": "/charagen/static/js/main.07ce3ea9.chunk.js",
+    "main.js.map": "/charagen/static/js/main.07ce3ea9.chunk.js.map",
     "runtime-main.js": "/charagen/static/js/runtime-main.f10dec11.js",
     "runtime-main.js.map": "/charagen/static/js/runtime-main.f10dec11.js.map",
     "static/js/2.23996427.chunk.js": "/charagen/static/js/2.23996427.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f10dec11.js",
     "static/js/2.23996427.chunk.js",
     "static/css/main.fd7c4665.chunk.css",
-    "static/js/main.2bd3a400.chunk.js"
+    "static/js/main.07ce3ea9.chunk.js"
   ]
 }
