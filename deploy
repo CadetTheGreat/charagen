@@ -1,12 +1,14 @@
 #!/bin/bash
 echo
 echo "Building..."
+pushd frontend 2>/dev/null
 npm run build
+popd 2>/dev/null
 
 echo
 echo "Replacing master with new build..."
 rm -r docs/
-cp -r build docs
+cp -r frontend/build docs
 
 echo "Committing the change..."
 git add docs/
