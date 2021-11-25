@@ -11,7 +11,7 @@ function flrrnd(num) {
 
 var calctraitval = (oldtraitval, traits_by_type, ...types) => {
    let available_types = [];
-   if (types.length == 0) {
+   if (types.length === 0) {
       // If a type is not specified, assume all types are valid.
       available_types = Object.keys(traits_by_type)
    } else {
@@ -23,7 +23,7 @@ var calctraitval = (oldtraitval, traits_by_type, ...types) => {
 
    for (let x of available_types) {
       for (let y of traits_by_type[x]) {
-         if (y != oldtraitval) {
+         if (y !== oldtraitval) {
             possibleVals.add(y)
          }
       }
