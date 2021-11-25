@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import traits from './traits.json';
 
 var VERSION = "1.2"
 var ALL_TYPES = ["fantasy", "scifi"]
@@ -44,7 +43,7 @@ class App extends React.Component {
 
       vals[index] = {
          trait: oldval.trait,
-         trait_val: calctraitval(oldval.trait_val, traits[oldval.trait])
+         trait_val: calctraitval(oldval.trait_val, this.state.traits[oldval.trait])
       }
 
       this.setState({
@@ -54,10 +53,10 @@ class App extends React.Component {
 
    generateCharacter = (type) => {
       let vals = []
-      for (let trait in traits) {
+      for (let trait in this.state.traits) {
          vals.push({
             trait: trait,
-            trait_val: calctraitval("", traits[trait], type)
+            trait_val: calctraitval("", this.state.traits[trait], type)
          })
       }
 
@@ -67,12 +66,20 @@ class App extends React.Component {
    }
 
    componentDidMount() {
-      this.generateCharacter(ALL_TYPES[0])
-   }
+        fetch("https://raw.githubusercontent.com/CadetTheGreat/charagen/main/frontend/src/traits.json", {
+            headers: { Accept: "text/plain" },
+            "method": "GET"
+        })
+        .then(response => response.json())
+        .then(traits => {
+            this.setState({traits})
+            this.generateCharacter(ALL_TYPES[0])
+        })
+    }
 
     render() {
         let buttons = ALL_TYPES.map((key) =>
-            <button onClick={() => this.generateCharacter(key)}>
+            <button key={key} onClick={() => this.generateCharacter(key)}>
                 Generate {key.charAt(0).toUpperCase() + key.slice(1)}
             </button>
         )
