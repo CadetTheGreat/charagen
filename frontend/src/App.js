@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 var VERSION = "1.2"
-var ALL_TYPES = ["fantasy", "scifi"]
+var ALL_TYPES = ["fantasy", "scifi", "modern"]
 
 function flrrnd(num) {
    return Math.floor(num * Math.random())
