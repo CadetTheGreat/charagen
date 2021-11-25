@@ -2,31 +2,35 @@ import React from 'react';
 import './App.css';
 import traits from './traits.json';
 
-var version = "1.2"
+var VERSION = "1.2"
+var ALL_TYPES = ["fantasy", "scifi"]
 
 function flrrnd(num) {
    return Math.floor(num * Math.random())
 }
 
 var calctraitval = (oldtraitval, traits_by_type, ...types) => {
-   // Only use types that exist and have at least 2 items, to avoid rerolling giving the same value as before.
-   let available_types = types.filter(traittype => Array.isArray(traits_by_type[traittype]))
+   let available_types = [];
+   if (types.length == 0) {
+      // If a type is not specified, assume all types are valid.
+      available_types = Object.keys(traits_by_type)
+   } else {
+       // Only use types that exist and have at least 2 items, to avoid rerolling giving the same value as before.
+      available_types = types.filter(traittype => Array.isArray(traits_by_type[traittype]) && traits_by_type[traittype].length > 1)
+   }
+
    let possibleVals = new Set()
 
    for (let x of available_types) {
       for (let y of traits_by_type[x]) {
-         possibleVals.add(y)
+         if (y != oldtraitval) {
+            possibleVals.add(y)
+         }
       }
    }
 
    let possibleValsArray = Array.from(possibleVals)
-   if (possibleVals.has(oldtraitval)) {
-      let oldidx = possibleValsArray.findIndex(x => x === oldtraitval)
-      let rndidx = flrrnd(possibleVals.size-1)
-      return possibleValsArray[rndidx >= oldidx ? rndidx + 1 : rndidx]
-   } else {
-      return possibleValsArray[flrrnd(possibleVals.size)]
-   }
+   return possibleValsArray[flrrnd(possibleValsArray.length)]
 }
 
 class App extends React.Component {
@@ -40,7 +44,7 @@ class App extends React.Component {
 
       vals[index] = {
          trait: oldval.trait,
-         trait_val: calctraitval(oldval.trait_val, traits[oldval.trait], "fantasy", "scifi")
+         trait_val: calctraitval(oldval.trait_val, traits[oldval.trait])
       }
 
       this.setState({
@@ -48,12 +52,12 @@ class App extends React.Component {
       });
    }
 
-   generateCharacter = () => {
+   generateCharacter = (type) => {
       let vals = []
       for (let trait in traits) {
          vals.push({
             trait: trait,
-            trait_val: calctraitval("", traits[trait], "fantasy")
+            trait_val: calctraitval("", traits[trait], type)
          })
       }
 
@@ -63,36 +67,40 @@ class App extends React.Component {
    }
 
    componentDidMount() {
-      this.generateCharacter()
+      this.generateCharacter(ALL_TYPES[0])
    }
 
-  render() {
-     let rows = this.state.vals.map((key, index) =>
-        <div key={key.trait} className="char-row">
-           <div className="char-desc">
-              <button className="char-button" onClick={() => this.rerollVal(index)}>Re-roll</button>
-              <h2 className="char-key"><b>{key.trait}:</b></h2>
-              <span> {key.trait_val} </span>
-           </div>
-        </div>
-           )
+    render() {
+        let buttons = ALL_TYPES.map((key) =>
+            <button onClick={() => this.generateCharacter(key)}>
+                Generate {key.charAt(0).toUpperCase() + key.slice(1)}
+            </button>
+        )
 
-   return <>
-     <header>
-       <h1>Charagen</h1>
-       <p>{version}</p>
-     </header>
-    <div className="App">
-      <div className="char-button-row">
-         <button onClick={this.generateCharacter}>
-           Generate
-         </button>
-         <hr />
-      </div>
-         {rows}
-    </div>
-       </>;
-  }
+        let rows = this.state.vals.map((key, index) =>
+            <div key={key.trait} className="char-row">
+                <div className="char-desc">
+                    <button className="char-button" onClick={() => this.rerollVal(index)}>Re-roll</button>
+                    <h2 className="char-key"><b>{key.trait}:</b></h2>
+                    <span> {key.trait_val} </span>
+                </div>
+            </div>
+        )
+
+        return <>
+            <header>
+                <h1>Charagen</h1>
+                <p>{VERSION}</p>
+            </header>
+            <div className="App">
+                <div className="char-button-row">
+                    {buttons}
+                    <hr />
+                </div>
+                {rows}
+            </div>
+        </>;
+    }
 }
 
 export default App;
