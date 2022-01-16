@@ -2,6 +2,7 @@
   "Race": {
     "fantasy": [
       "Aarakocra",
+      "Mushroom Person",
       "Aasimar / Deva",
       "Asherati",
       "Aventi",
@@ -104,6 +105,13 @@
   "Physical Trait": {
     "fantasy": [
       "Messy",
+      "Egyptian inspired headpiece",
+      "Ram Horns",
+      "Long floppy ears",
+      "golden streaks or tips in their hair",
+      "Almost always has one eye closed",
+      "Wears thick shacles that restrain their full power for the safety of themselves and others"
+      "they have a sentient tattoo that speaks to them."
       "Has a notable scar",
       "Likes to dress fancy",
       "Dyed Hair",
@@ -171,6 +179,7 @@
       "Likes to walk around barefoot even in public locations",
       "Some discerning physical mark — birthmark, freckles, mole, or scar",
       "Wears unusual glasses",
+      "Wears braces on their weak ankles",
       "Wears glasses",
       "Large feet — may mean they’re clumsy",
       "Acne, eczema, rash, or other skin problems",
@@ -288,6 +297,7 @@
     "fantasy": [
       "Very Introverted, quiet and reserved, keeps to themselves",
       "Optimistic",
+      "Terrible Singer, but loves to sing",
       "Pessimistic",
       "Highly extroverted, loves socializing and meeting new people",
       "Perfectionist/Has to do everything twice/OCD",
@@ -1787,14 +1797,19 @@
     "fantasy": [
       "A war pick.",
       "Magical Goggles",
+      "Goggles",
       "A mysterious crystal that looks like a D20",
       "The Blinded Eye of Odin. Formerly, the Eye of Odin - A now-cracked orb that once allowed it's bearer to cheat death. It still radiates a mystic energy and grants extraordinary luck in battle.",
       "A magical fireball thing that attacks.",
       "A living hat that talks to the main character either mentally or vocally",
       "Cowboy hat",
       "A tall hat",
+      "Flower Hat",
       "Rapier",
       "Baseball hat",
+      "Bandanna",
+      "fork",
+      "pitch fork",
       "Bowler hat",
       "Cocktail hat",
       "Warhammer",
