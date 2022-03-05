@@ -1,6 +1,6 @@
 {
-  "Race": {
-    "fantasy": [
+  "Race":{
+    "fantasy":[
       "Aarakocra",
       "Mushroom Person",
       "Aasimar / Deva",
@@ -92,19 +92,19 @@
       "Banshee"
     ]
   },
-  "Gender": {
-    "fantasy": [
+  "Gender":{
+    "fantasy":[
       "Male",
       "Female"
     ],
-    "scifi": [
+    "scifi":[
       "Male",
       "Female",
       "Cyborg"
     ]
   },
-  "Physical Trait": {
-    "fantasy": [
+  "Physical Trait":{
+    "fantasy":[
       "Messy",
       "Egyptian inspired headpiece",
       "Ram Horns",
@@ -295,8 +295,8 @@
       "skin on their left forearm is transparent. ",
       "There are small mushrooms on the back of the NPC's neck."
     ],
-   "scifi": [
-           "Messy",
+    "scifi":[
+      "Messy",
       "golden streaks or tips in their hair",
       "Almost always has one eye closed",
       "Wears thick shacles that restrain their full power for the safety of themselves and others",
@@ -460,8 +460,8 @@
       "skin on their left forearm is transparent. "
     ]
   },
-  "Personality Trait": {
-    "fantasy": [
+  "Personality Trait":{
+    "fantasy":[
       "Very Introverted, quiet and reserved, keeps to themselves",
       "Optimistic",
       "Terrible Singer, but loves to sing",
@@ -922,8 +922,8 @@
       "Has a life-threatening illness, but the  heart of a warrior."
     ]
   },
-  "Flaw": {
-    "fantasy": [
+  "Flaw":{
+    "fantasy":[
       "Can only see out of one eye or hear out of one ear",
       "Hates getting wet/rarely bathes",
       "Inability to feel normal emotions",
@@ -1196,8 +1196,8 @@
       "Can’t swim"
     ]
   },
-  "Genre/Setting": {
-    "fantasy": [
+  "Genre/Setting":{
+    "fantasy":[
       "An ancient temple with a small village surrounding it. Its location is in a massive fictional forest slash jungle. The architecture is Japanese based and the entire village is built in the canopy of the giant trees!",
       "Modern Fantasy Slums",
       "Egypt inspired",
@@ -1230,8 +1230,8 @@
       "Humans are an extinct race."
     ]
   },
-  "Race/Species": {
-    "fantasy": [
+  "Race/Species":{
+    "fantasy":[
       "A reptilian species called Takaren. They are known for their elusiveness, hand to hand combat, endurance, and strength. Although they are not super strong, they are stronger than the average human male. So to go against their stronger foes they have to be smart, quick on their feet, and counterattack. They are an honorable species when it comes to their culture as well. Their looks can vary between snake and dragon depending on the subspecies and genes they have; but they do not have wings. They often feature claws, horns, and a large tail.",
       "Foreigner human",
       "a tree spirit",
@@ -1381,8 +1381,8 @@
       "Purple, blue, or gray skin. Antenna or horns curved out"
     ]
   },
-  "Class": {
-    "fantasy": [
+  "Class":{
+    "fantasy":[
       "Barbarian/Berserker",
       "Knight",
       "BeastSlayer",
@@ -1444,8 +1444,8 @@
       "Scholar"
     ]
   },
-  "Motivation": {
-    "fantasy": [
+  "Motivation":{
+    "fantasy":[
       "Their army had fallen. Their kingdom was in ruins. But They would save him",
       "Sees themselves as a liberator or a protector of the world. They want to help people but in turn, end up doing more harm than good because of the way they try to save the world— like a tragic hero type instead of stupid hero lol",
       "Keep his Pack safe by doing what the darkness is telling him",
@@ -1625,8 +1625,8 @@
       "WINNING A COMPETITION"
     ]
   },
-  "Vocation/Job": {
-    "fantasy": [
+  "Vocation/Job":{
+    "fantasy":[
       "a monk. One who guards the temple and the village.",
       "trafficking forrest creatures like trolls, drarvesn, elves, nokken and huldra. He is actually a spy and is gathering evidence.",
       "Novelist",
@@ -1921,8 +1921,8 @@
       "Writer"
     ]
   },
-  "Age": {
-    "fantasy": [
+  "Age":{
+    "fantasy":[
       "they become the age of whoever they kiss",
       "Looks to be in his 40's, but has an ageless quality about him.",
       "ancient, seemingly older than the world itself.",
@@ -1939,8 +1939,8 @@
       "except it is an immortal or celestial being in which that age would be equated to about 32 in human perception of aging."
     ]
   },
-  "Prop": {
-    "fantasy": [
+  "Prop":{
+    "fantasy":[
       "A war pick.",
       "A crown that makes the wearer have more influence over people",
       "Mask that lets the user see souls / spirits / auras etc.",
@@ -2065,8 +2065,8 @@
       "Glasses of skimming: allows the user to read at an incredible pace as long as they understand the language. The reader understands the literal meaning of the words but some of the metaphors underneath may be lost on them."
     ]
   },
-  "Skill": {
-    "fantasy": [
+  "Skill":{
+    "fantasy":[
       "The character is an excellent archer and can fire arrows that instead of injuring the target, it gives them uncontrollable fear ",
       "Darkly charismatic",
       "Skilled musician (piano, guitar, violin, etc.)",
@@ -2157,8 +2157,8 @@
       "Able to talk their way out of any trouble/invent stories on the fly"
     ]
   },
-  "Physique": {
-    "fantasy": [
+  "Physique":{
+    "fantasy":[
       "Underweight and fragile.",
       "young body using a mobility aid! I want a hero using crutches or a cane <3",
       "a centaur like being except instead of half horse, half human, they are half human, half goat",
@@ -2196,8 +2196,8 @@
       "Endomorph"
     ]
   },
-  "Secret": {
-    "fantasy": [
+  "Secret":{
+    "fantasy":[
       "Turning into the thing they sought to destroy. Maybe they hunted a creature or a person and they’ve become too much like them.",
       "There's someone or something trapped in their shaddow (perhaps a loved one or some kind of monster)",
       "Illiterate and will stop at nothing to make sure no one knows this fact",
@@ -2391,8 +2391,8 @@
       "I was raised as a hostage of my family’s enemies after my parents refused to pay the ransom."
     ]
   },
-  "Enemy": {
-    "fantasy": [
+  "Enemy":{
+    "fantasy":[
       "a cute bunny rabbit which is actually evil but no one else knows",
       "Their childhood friend, who because of a change in his/her appearance, doesn't know it's them",
       "Their great Aunt, a very thin woman who lives in a grand old house, wears floral dresses, and seems to only ever consume tea",
@@ -2437,8 +2437,8 @@
       "Wild Beasts"
     ]
   },
-  "Other": {
-    "fantasy": [
+  "Other":{
+    "fantasy":[
       "Extremely good at interior design",
       "Constantly mumbling things to themselves (a song, a poem, a conversation, etc)",
       "Hates being inside/loves sleeping outdoors",
